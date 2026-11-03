@@ -13,6 +13,7 @@
   --signal-soft: rgb(255 90 31 / 0.14);
   --ok: #9be37a;
   --manual: #6b6459;
+  --control-edge: #8a8377;
 
   --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
   --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -58,7 +59,8 @@
     --signal-ink: #ffffff;
     --signal-soft: rgb(178 50 5 / 0.1);
     --ok: #256a0e;
-    --manual: #a39a8a;
+    --manual: #7d7466;
+    --control-edge: #6f6759;
     color-scheme: light;
   }
 }
@@ -76,6 +78,7 @@
   --signal-ink: #ffffff;
   --signal-soft: rgb(178 50 5 / 0.1);
   --ok: #256a0e;
-  --manual: #a39a8a;
+  --manual: #7d7466;
+  --control-edge: #6f6759;
   color-scheme: light;
 }

@@ -24,16 +24,41 @@ function saveTheme(theme) {
   }
 }
 
+function resolvedTheme() {
+  return root.dataset.theme ?? (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+}
+
 function initTheme() {
   const saved = readTheme();
   if (saved === "light" || saved === "dark") root.dataset.theme = saved;
   const button = document.querySelector(".theme-toggle");
   if (!button) return;
+  const reflect = (theme) => {
+    button.dataset.mode = theme;
+    button.setAttribute("aria-label", theme === "light" ? "Включить тёмную тему" : "Включить светлую тему");
+  };
+  reflect(resolvedTheme());
   button.addEventListener("click", () => {
-    const current = root.dataset.theme ?? (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
-    const next = current === "light" ? "dark" : "light";
+    const next = resolvedTheme() === "light" ? "dark" : "light";
     root.dataset.theme = next;
     saveTheme(next);
+    reflect(next);
+  });
+}
+
+function initMotionToggle() {
+  const button = document.querySelector(".motion-toggle");
+  if (!button) return;
+  if (reducedMotion) {
+    button.hidden = true;
+    return;
+  }
+  button.addEventListener("click", () => {
+    const paused = button.getAttribute("aria-pressed") !== "true";
+    button.setAttribute("aria-pressed", String(paused));
+    button.setAttribute("aria-label", paused ? "Запустить анимацию" : "Остановить анимацию");
+    root.classList.toggle("is-paused", paused);
+    document.dispatchEvent(new CustomEvent("offload:motion", { detail: { paused } }));
   });
 }
 
@@ -42,6 +67,7 @@ function initReveal() {
   items.forEach((item) => {
     const siblings = [...item.parentElement.children].filter((c) => c.hasAttribute("data-reveal"));
     item.style.setProperty("--reveal-i", String(siblings.indexOf(item)));
+    item.addEventListener("focusin", () => item.classList.add("is-in"), { once: true });
   });
   if (reducedMotion) {
     items.forEach((item) => item.classList.add("is-in"));
@@ -71,6 +97,7 @@ function initContactLinks() {
 
 root.classList.add("js");
 initTheme();
+initMotionToggle();
 initReveal();
 initContactLinks();
 initFlow(document.querySelector("#flow"), { reducedMotion });

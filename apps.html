@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Разбор AI-приложений: Cal AI, Tolan, Sora | Shoaib Ghulam</title>
+  <meta name="description" content="Почему зашли Cal AI и Tolan, почему закрыли Sora, и какое AI-приложение я бы запустил сам — «Тарелка», калории по фото в Telegram.">
+  <meta name="theme-color" content="#0f0e0c">
+  <meta name="color-scheme" content="dark light">
+  <link rel="canonical" href="https://shoaibghulam.github.io/offload-landing/apps.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Offload">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:url" content="https://shoaibghulam.github.io/offload-landing/apps.html">
+  <meta property="og:title" content="Разбор AI-приложений, которые «зашли»">
+  <meta property="og:description" content="Cal AI, Tolan и контрпример Sora: ценность, рост, монетизация. И своё приложение — «Тарелка».">
+  <meta property="og:image" content="https://shoaibghulam.github.io/offload-landing/assets/og.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Offload — рутину агентам, решения вам">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://shoaibghulam.github.io/offload-landing/assets/og.png">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="assets/favicon-32.png" sizes="32x32" type="image/png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;600&family=Unbounded:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/article.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-head">
+    <div class="wrap site-head__row">
+      <a class="logo" href="./" aria-label="Offload — на главную">offload<span>/</span></a>
+      <div class="site-head__actions">
+        <a class="back-link" href="./">← Лендинг</a>
+        <button class="theme-toggle" type="button" aria-label="Включить светлую тему">
+          <svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 1 1 9.5 4a7 7 0 0 0 10.5 10.5z"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1">
+    <article class="article">
+      <div class="article__inner">
+        <header class="article__head">
+          <p class="eyebrow">Тестовое задание · часть 2</p>
+          <h1>Разбор AI-приложений, которые «зашли»</h1>
+          <p class="article__lead">Взял приложения, которые сейчас в топе или растут в 2026 году, и один громкий провал для контраста.</p>
+          <ol class="lineup">
+            <li><span>01</span><p><strong>Cal AI</strong> (здоровье) — утилита, которая приносит деньги. Её купил MyFitnessPal.</p></li>
+            <li><span>02</span><p><strong>Tolan</strong> (AI-компаньон) — растёт на привязанности и удержании, а не на вирусности.</p></li>
+            <li><span>×</span><p><strong>Sora</strong> (контрпример) — самый громкий запуск осени 2025 года, закрыт через семь месяцев.</p></li>
+          </ol>
+          <p class="article__meta mono">Данные на 03.11.2026, из открытых источников (TechCrunch, Appfigures, заявления компаний). Оценки помечены.</p>
+        </header>
+
+        <section class="app" id="cal-ai" aria-labelledby="cal-title">
+          <div class="app__top" data-reveal>
+            <span class="app__num" aria-hidden="true">01</span>
+            <h2 id="cal-title">Cal AI: калории по фото еды</h2>
+          </div>
+
+          <h3>Что за продукт и для кого</h3>
+          <ul>
+            <li>Фотографируешь тарелку — получаешь калории и БЖУ. Для тех, кто хочет похудеть или прийти в форму, но не готов вбивать каждый продукт вручную.</li>
+            <li>Запуск в мае 2024 года. Сделали два подростка (основателю было 17).</li>
+          </ul>
+
+          <p class="figures"><b>Цифры</b>15 млн+ загрузок и $30 млн+ выручки в год, команда из 7 человек. 2 марта 2026 года MyFitnessPal объявил о покупке, сумма не раскрыта; Cal AI работает как отдельный продукт.</p>
+
+          <h3>Почему зашло</h3>
+          <ul>
+            <li><strong>Ценность в одно действие.</strong> Фото вместо ручного ввода снимает главную причину, по которой бросают трекинг калорий.</li>
+            <li><strong>Инфлюенсеры, потом реклама.</strong> По словам основателя, около 250 блогеров в TikTok и Instagram получали фиксированную ежемесячную оплату; когда канал перестал расти, подключили платную рекламу.</li>
+            <li><strong>Длинный онбординг как воронка.</strong> Анкета о весе и цели, потом пейвол. Основатель говорит, что дополнительные вопросы повысили конверсию, и называет 20–25% перехода в оплату или триал (данные из интервью, не проверены).</li>
+          </ul>
+
+          <h3>Как зарабатывает</h3>
+          <ul>
+            <li>Жёсткий пейвол: в App Store прямо написано, что результаты скана доступны только по подписке.</li>
+            <li>Покупки в App Store от $2.99 до $29.99; годовой план, по обзорам, около $29.99. Сетка меняется под A/B-тесты пейвола (Superwall).</li>
+          </ul>
+
+          <h3>Что бы я улучшил</h3>
+          <ul>
+            <li><strong>Честная точность.</strong> Показывать диапазон («450–600 ккал») и задавать один уточняющий вопрос («жарили на масле?»). Фото не видит масло и порцию, а неточность тихо убивает доверие.</li>
+            <li><strong>Удержание после первой недели.</strong> Скорость ввода — ценность для новичка. Нужен еженедельный разбор «что съел, где сорвался, что поменять», тогда подписка покупает результат, а не сканер.</li>
+            <li><strong>Тест «1–3 бесплатных скана» против жёсткого пейвола.</strong> На платном трафике жёсткий пейвол выигрывает, но на органике человек, увидевший «магию», может конвертироваться лучше. Это решает тест, а не вкус.</li>
+          </ul>
+        </section>
+
+        <section class="app" id="tolan" aria-labelledby="tolan-title">
+          <div class="app__top" data-reveal>
+            <span class="app__num" aria-hidden="true">02</span>
+            <h2 id="tolan-title">Tolan: AI-друг в виде инопланетянина</h2>
+          </div>
+
+          <h3>Что за продукт и для кого</h3>
+          <ul>
+            <li>AI-компаньон — мультяшный инопланетянин. С ним говорят о дне, отношениях и целях, он помогает с задачами. Персонаж намеренно нечеловеческий: не притворяется человеком и не превращается в «AI-девушку».</li>
+            <li>Компания Portola, запуск в феврале 2025 года. Аудитория — около 70% женщин, около 40% родителей.</li>
+          </ul>
+
+          <p class="figures"><b>Цифры</b>Октябрь 2026, данные компании: 250 тыс.+ активных пользователей, 70 млн разговоров, ARR «в десятках млн $». Раунд $30 млн в октябре 2026 года с участием Union Square Ventures, Khosla и Homebrew.</p>
+
+          <h3>Почему зашло</h3>
+          <ul>
+            <li><strong>Позиционирование.</strong> Не «замена людям», а друг, который подталкивает к реальной жизни. Так продукт отстраивается от токсичной репутации AI-компаньонов.</li>
+            <li><strong>Память.</strong> Персонаж помнит друзей, семью и хобби пользователя. Чем дольше общаешься, тем больнее уходить — в этом весь механизм удержания.</li>
+            <li><strong>Безопасный образ.</strong> Инопланетянин не вызывает «зловещей долины» и не ассоциируется с романтическими ботами, поэтому подходит массовой аудитории.</li>
+          </ul>
+
+          <h3>Как зарабатывает</h3>
+          <ul>
+            <li>Многоуровневая подписка, без неё доступна не вся функциональность.</li>
+            <li>Цены 2025 года: $4.99 в неделю, $10 в месяц, $70 в год. Актуальную сетку на 2026 год найти не удалось.</li>
+          </ul>
+
+          <h3>Что бы я улучшил</h3>
+          <ul>
+            <li><strong>От «друга» к «другу, который делает».</strong> Календарь, напоминания, проактивные сообщения («завтра трудный разговор с мамой — обсудим?»). Это защита от универсальных ассистентов вроде ChatGPT и Gemini, у которых нет эмоциональной связи.</li>
+            <li><strong>Безопасность как часть продукта, а не забота юристов.</strong> Против разработчиков AI-собеседников идут иски из-за самоубийств пользователей. Нужны заметное распознавание кризиса, переход к живой помощи и родительский режим — для аудитории, где 40% родителей, это ещё и аргумент при продаже.</li>
+            <li><strong>Подводить к годовому плану.</strong> Недельный план даёт больше денег с одного пользователя, но отток выше; годовой выгоднее, когда ценность растёт со временем. Предлагать его после «момента привязанности», например через 7 дней общения.</li>
+          </ul>
+        </section>
+
+        <aside class="callout" aria-labelledby="sora-title" data-reveal>
+          <p class="eyebrow">Контрпример</p>
+          <h2 id="sora-title">Sora (OpenAI)</h2>
+          <p>Самый громкий запуск осени 2025 года: №1 в App Store, миллион загрузок быстрее ChatGPT. Но новизна AI-роликов выдыхается за 2–3 месяца (3,2 млн загрузок в ноябре → 1,2 млн в январе), а за всё время пользователи потратили всего $1,4 млн при дорогой генерации видео. 26 апреля 2026 года приложение закрыли. <strong>Урок: хайп ≠ продукт.</strong></p>
+        </aside>
+
+        <section class="compare" aria-labelledby="compare-title">
+          <h2 id="compare-title">Сравнение</h2>
+          <div class="table-wrap" tabindex="0" role="region" aria-labelledby="compare-title">
+            <table>
+              <thead>
+                <tr><td></td><th scope="col">Cal AI</th><th scope="col">Tolan</th><th scope="col">Sora</th></tr>
+              </thead>
+              <tbody>
+                <tr><th scope="row">Ядро ценности</th><td>Скорость: фото вместо ввода</td><td>Эмоции, память</td><td>Новизна, «я в кадре»</td></tr>
+                <tr><th scope="row">Канал роста</th><td>Платные блогеры, затем реклама</td><td>Позиционирование, удержание</td><td>Инвайты, шеринг роликов</td></tr>
+                <tr><th scope="row">Монетизация</th><td>Жёсткий пейвол, подписка</td><td>Подписка: неделя, месяц, год</td><td>Бесплатно + $4 за 10 генераций</td></tr>
+                <tr><th scope="row">Масштаб</th><td>15 млн+ загрузок, $30 млн+ в год</td><td>250 тыс.+ активных, ARR в десятках млн $</td><td>9,6 млн загрузок, $1,4 млн за всё время</td></tr>
+                <tr><th scope="row">Итог</th><td>Куплен MyFitnessPal</td><td>Растёт, раунд $30 млн</td><td>Закрыт через 7 месяцев</td></tr>
+                <tr><th scope="row">Урок</th><td>Простая польза + пейвол = деньги</td><td>Удержание важнее вирусности</td><td>Хайп ≠ продукт</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="verdict"><strong>Вывод.</strong> Деньги зарабатывают не самые громкие AI-приложения, а те, где AI решает одну регулярную задачу и монетизация заложена с первого экрана. Cal AI зарабатывает за год в 20 с лишним раз больше, чем Sora за всю жизнь.</p>
+        </section>
+
+        <section class="own" id="tarelka" aria-labelledby="own-title">
+          <p class="eyebrow">Какое приложение запустил бы я</p>
+          <h2 id="own-title" data-reveal>«Тарелка»: калории и БЖУ по фото для русской кухни, <span class="hl">в Telegram</span></h2>
+
+          <p><strong>Идея.</strong> Cal AI для русскоязычного рынка: Telegram Mini App плюс версия в RuStore. Фото еды → калории, БЖУ и короткий совет. Модель знает, что реально едят: борщ, плов, гречку с котлетой, комплексный обед в столовой, готовую еду из ВкусВилла.</p>
+
+          <h3>Почему именно это</h3>
+          <ul>
+            <li><strong>Механика проверена.</strong> Cal AI доказал спрос на «фото вместо ввода». Перенести проверенную механику на новый рынок менее рискованно, чем придумывать категорию с нуля.</li>
+            <li><strong>Ниша свободна.</strong> Есть FatSecret и YAZIO, есть боты-однодневки, но нет продукта, который знает столовую, ВкусВилл и домашнюю кухню и встроен в чаты, где люди уже худеют вместе. Западным приложениям сложно продавать подписки российским пользователям.</li>
+            <li><strong>Рост встроен в Telegram.</strong> Ссылка открывается в один клик, ничего не нужно ставить. Главная механика — групповой челлендж в чате («худеем с коллегами», общий рейтинг недели): каждый участник может запустить такой же челлендж в своём чате.</li>
+            <li><strong>Уроки разборов учтены:</strong> ценность в одно действие (Cal AI), удержание через еженедельный разбор и коуча с памятью (Tolan), дешёвая себестоимость с первого дня (антипример Sora).</li>
+          </ul>
+
+          <h3>Деньги</h3>
+          <ul>
+            <li>3 бесплатных скана в день, дальше подписка — гипотеза для теста: около 299 ₽ в месяц или 1 990 ₽ в год, 3 дня пробного периода.</li>
+            <li>Внутри Mini App — Telegram Stars (требование Telegram для цифровых товаров); ЮKassa/СБП — на веб-версии и в RuStore.</li>
+          </ul>
+          <p class="estimate"><strong>Оценка юнит-экономики.</strong> Один скан на Gemini 2.5 Flash ($0,30 за 1 млн входных токенов, $2,50 за 1 млн выходных; ~1 500 токенов на фото с промптом и ~500 на ответ) стоит около $0,0017, это ~0,15 ₽ при курсе ~90 ₽/$. Бесплатный пользователь, который каждый день тратит все 3 скана, обходится максимум в ~15 ₽ в месяц — 5% цены подписки.</p>
+
+          <h3>MVP соберу сам за 3–4 недели — так же, как этот лендинг</h3>
+          <ul>
+            <li><strong>Неделя 1:</strong> Mini App + бот, фото → vision-модель → КБЖУ с диапазоном и уточняющим вопросом.</li>
+            <li><strong>Неделя 2:</strong> дневник, цель из короткого онбординга, пейвол и оплата.</li>
+            <li><strong>Неделя 3:</strong> групповой челлендж, карточка «итоги недели», реферальная ссылка.</li>
+            <li><strong>Неделя 4:</strong> бета на 100–200 человек, замер точности на эталонных блюдах, первые 5–10 микроблогеров о похудении.</li>
+          </ul>
+
+          <p><strong>Данные.</strong> Хранение на российских серверах; данные о весе и здоровье — с отдельным согласием (152-ФЗ).</p>
+          <p><strong>Метрики MVP:</strong> доля сделавших 3+ скана в первый день, удержание на 7-й день, конверсия из онбординга в оплату (ориентир — 20–25% у Cal AI), сколько новых участников приводит один челлендж.</p>
+
+          <p class="backup"><em>Запасной вариант:</em> AI-репетитор ЕГЭ/ОГЭ по фото задачи. Платят родители, но рынок сезонный, конкуренция плотнее, а ошибка в объяснении стоит дороже ошибки в калориях.</p>
+        </section>
+
+        <section class="sources" aria-labelledby="sources-title">
+          <h2 id="sources-title">Источники</h2>
+          <ul>
+            <li><a href="https://techcrunch.com/2026/03/02/myfitnesspal-has-acquired-cal-ai-the-viral-calorie-app-built-by-teens">TechCrunch — MyFitnessPal покупает Cal AI (02.03.2026)</a></li>
+            <li><a href="https://founderpath.com/resources/zach-yadegari-cal-ai-onboarding-tests-and-influencer-marketing">Founderpath — интервью основателя Cal AI</a></li>
+            <li><a href="https://www.netinfluencer.com/cal-ai-founder-zach-yadegari-breaks-down-the-influencer-playbook-behind-his-apps-growth/">Netinfluencer — инфлюенсер-стратегия Cal AI</a></li>
+            <li><a href="https://apps.apple.com/us/app/cal-ai-calorie-tracker/id6480417616">Cal AI в App Store</a></li>
+            <li><a href="https://techcrunch.com/?p=3179141">TechCrunch — Tolan привлекает $30 млн (19.10.2026)</a></li>
+            <li><a href="https://theaiinsider.tech/2026/10/20/ai-companion-tolan-secures-30m-as-it-gains-traction-in-a-crowded-field/">The AI Insider — Tolan, аудитория и ARR</a></li>
+            <li><a href="https://eu.36kr.com/en/p/3378446113298949">36Kr — Tolan, запуск и цены 2025 года</a></li>
+            <li><a href="https://techcrunch.com/2025/10/03/openais-sora-soars-to-no-1-on-the-u-s-app-store">TechCrunch — Sora №1 в App Store (03.10.2025)</a></li>
+            <li><a href="https://techcrunch.com/2026/01/29/openais-sora-app-is-struggling-after-its-stellar-launch/">TechCrunch — спад Sora по данным Appfigures (29.01.2026)</a></li>
+            <li><a href="https://www.engadget.com/ai/openai-now-sells-extra-sora-credits-for-4-plans-to-reduce-free-gens-in-the-future-223905628.html">Engadget — платные генерации Sora за $4</a></li>
+            <li><a href="https://the-decoder.com/openai-sets-two-stage-sora-shutdown-with-app-closing-april-2026-and-api-following-in-september/">The Decoder — график закрытия Sora</a></li>
+            <li><a href="https://ai.google.dev/gemini-api/docs/pricing">Цены Gemini API — для оценки юнит-экономики</a></li>
+          </ul>
+        </section>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Offload · Shoaib Ghulam</span>
+      <a href="./">← К лендингу</a>
+    </div>
+  </footer>
+</body>
+</html>

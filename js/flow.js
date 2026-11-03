@@ -125,14 +125,16 @@ export function initFlow(figure, { reducedMotion }) {
   if (reducedMotion) return;
   const loop = animate(scene);
   let visible = false;
+  let paused = false;
+  const sync = () => (visible && !paused && !document.hidden ? loop.start() : loop.stop());
   const io = new IntersectionObserver(([entry]) => {
     visible = entry.isIntersecting;
-    if (visible) loop.start();
-    else loop.stop();
+    sync();
   });
   io.observe(figure);
-  document.addEventListener("visibilitychange", () => {
-    if (document.hidden) loop.stop();
-    else if (visible) loop.start();
+  document.addEventListener("visibilitychange", sync);
+  document.addEventListener("offload:motion", (event) => {
+    paused = Boolean(event.detail?.paused);
+    sync();
   });
 }

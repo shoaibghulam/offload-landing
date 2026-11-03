@@ -671,3 +671,102 @@ html:not(.js) .step::before {
   overflow-wrap: anywhere;
   hyphens: auto;
 }
+
+/* Audit fixes: controls, states, mobile week, reserved space. */
+.switch__track,
+.term__replay {
+  border-color: var(--control-edge);
+}
+
+.switch,
+.term__replay {
+  touch-action: manipulation;
+}
+
+.switch:active .switch__track,
+.term__replay:active {
+  transform: scale(0.96);
+}
+
+@media (hover: hover) {
+  .switch:hover .switch__track {
+    border-color: var(--ink);
+  }
+}
+
+.term__replay {
+  min-height: 44px;
+}
+
+.task__agent {
+  visibility: hidden;
+  transition: opacity var(--dur-mid), visibility 0s linear var(--dur-mid);
+}
+
+.week.is-on .task--auto .task__agent {
+  visibility: visible;
+  transition-delay: 0s;
+}
+
+.week__days {
+  min-height: calc(5 * 64px + 4 * var(--space-2));
+}
+
+.roi__big {
+  font-size: clamp(2rem, 1rem + 5vw, 6.5rem);
+  overflow-wrap: anywhere;
+}
+
+@media (max-height: 600px) {
+  .week__panel {
+    position: static;
+  }
+}
+
+@supports not (-webkit-text-stroke: 1px red) {
+  .cta h2 em {
+    color: var(--ink);
+  }
+}
+
+@media (max-width: 600px) {
+  .term__body {
+    min-height: 28rem;
+    font-size: 0.8rem;
+  }
+}
+
+/* Phones: tasks stack so every label stays readable. */
+@media (max-width: 560px) {
+  .week__days {
+    min-height: 0;
+  }
+
+  .day {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 0.4rem;
+  }
+
+  .day__track {
+    flex-direction: column;
+    gap: 3px;
+  }
+
+  .task {
+    flex: none !important;
+    min-height: 44px;
+  }
+
+  .task__label {
+    white-space: normal;
+    font-size: 0.82rem;
+  }
+
+  .task__hours {
+    font-size: 0.75rem;
+  }
+
+  .week.is-on .task--auto {
+    clip-path: inset(0 55% 0 0);
+  }
+}

@@ -48,6 +48,7 @@ export function initWeek(root) {
   const list = root.querySelector(".week__days");
   const toggle = root.querySelector(".switch");
   const counter = root.querySelector("[data-freed]");
+  const status = root.querySelector("[data-freed-status]");
   let index = 0;
   WEEK.forEach(([day, tasks]) => {
     const row = make("li", "day");
@@ -64,6 +65,7 @@ export function initWeek(root) {
     toggle.setAttribute("aria-pressed", String(on));
     root.classList.toggle("is-on", on);
     counter.textContent = on ? `${freed} ч` : "0 ч";
+    if (status) status.textContent = on ? `Агенты включены: освобождается ${freed} ч в неделю` : "Агенты выключены";
   });
 }
 
@@ -120,15 +122,19 @@ export function initRoi(root) {
   const write = (selector, text) => {
     root.querySelector(selector).textContent = text;
   };
+  const label = (id, text) => {
+    root.querySelector(`#${id}`).setAttribute("aria-valuetext", text);
+    write(`[data-out='${id}']`, text);
+  };
 
   const update = () => {
     const hoursPerWeek = read("roi-hours");
     const hourlyRate = read("roi-rate");
     const sharePct = read("roi-share");
     const r = calcRoi({ hoursPerWeek, hourlyRate, automationShare: sharePct / 100 });
-    write("[data-out='roi-hours']", `${hoursPerWeek} ч/нед`);
-    write("[data-out='roi-rate']", formatRub(hourlyRate));
-    write("[data-out='roi-share']", `${sharePct}%`);
+    label("roi-hours", `${hoursPerWeek} ч/нед`);
+    label("roi-rate", formatRub(hourlyRate));
+    label("roi-share", `${sharePct}%`);
     write("[data-roi='money']", formatRub(r.moneyPerMonth));
     write("[data-roi='hours']", `${formatNum(r.hoursPerMonth)} ч`);
     write("[data-roi='days']", `${formatNum(r.workdaysPerYear)} дн.`);

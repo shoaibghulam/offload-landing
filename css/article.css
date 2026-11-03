@@ -1,0 +1,249 @@
+/* Editorial long-read (apps.html). Layers on tokens, base and hero (header). */
+.back-link {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+  text-decoration: none;
+  padding: 0.6em 0.4em;
+}
+
+.article {
+  padding-block: var(--space-5) var(--space-6);
+}
+
+.article__inner {
+  width: min(100% - 2 * var(--gutter), 68ch);
+  margin-inline: auto;
+}
+
+.article__head h1 {
+  font-size: var(--step-3);
+  margin-block: var(--space-2) var(--space-3);
+  overflow-wrap: anywhere;
+}
+
+.article__lead {
+  font-size: var(--step-1);
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+.article__meta {
+  margin-top: var(--space-2);
+  color: var(--ink-faint);
+}
+
+.lineup {
+  list-style: none;
+  margin: var(--space-3) 0 0;
+  padding: 0;
+}
+
+.lineup li {
+  display: grid;
+  grid-template-columns: 2.2rem minmax(0, 1fr);
+  gap: var(--space-1);
+}
+
+.lineup span {
+  font-family: var(--font-mono);
+}
+
+.article__head {
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--line);
+}
+
+.app {
+  padding-block: var(--space-5) var(--space-2);
+  border-bottom: 1px solid var(--line);
+}
+
+.app__top {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+
+.app__num {
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  line-height: 1;
+  color: var(--ink-faint);
+  flex: none;
+}
+
+.article h2 {
+  font-size: var(--step-2);
+  overflow-wrap: anywhere;
+}
+
+.article h3 {
+  font-size: var(--step-0);
+  margin-block: var(--space-3) var(--space-1);
+}
+
+.article p + p,
+.article ul + p {
+  margin-top: var(--space-2);
+}
+
+.article ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+.article li + li {
+  margin-top: 0.5em;
+}
+
+.article li::marker,
+.lineup span,
+.callout strong,
+.own .eyebrow,
+.own .hl {
+  color: var(--signal);
+}
+
+.figures {
+  padding: var(--space-2) var(--space-3);
+  border-left: 3px solid var(--line-strong);
+  background: var(--paper-raised);
+  margin-block: var(--space-3) 0;
+}
+
+.figures b {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+  margin-right: 0.4em;
+}
+
+.callout {
+  margin-block: var(--space-5) 0;
+  padding: var(--space-3);
+  border: 1px solid var(--line-strong);
+  background: var(--paper-sunken);
+}
+
+.callout h2 {
+  font-size: var(--step-1);
+  margin-block: var(--space-1) var(--space-2);
+}
+
+.compare,
+.sources {
+  padding-top: var(--space-5);
+}
+
+.compare h2,
+.sources h2 {
+  margin-bottom: var(--space-3);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-raised);
+}
+
+.compare table {
+  width: 100%;
+  min-width: 40rem;
+  border-collapse: collapse;
+  font-size: var(--step--1);
+}
+
+.compare th,
+.compare td {
+  padding: 0.75em 1em;
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--line);
+}
+
+.compare thead th {
+  font-family: var(--font-display);
+  font-size: var(--step-0);
+  border-bottom-color: var(--line-strong);
+}
+
+.compare tbody th {
+  font-family: var(--font-mono);
+  font-weight: 400;
+  color: var(--ink-faint);
+  white-space: nowrap;
+}
+
+.compare tr:last-child > * {
+  border-bottom: 0;
+}
+
+.verdict {
+  margin-top: var(--space-3);
+}
+
+.own {
+  margin-top: var(--space-5);
+  padding: var(--space-4) var(--space-3);
+  border-top: 4px solid var(--signal);
+  background: var(--signal-soft);
+}
+
+.own h2 {
+  margin-block: var(--space-1) var(--space-3);
+}
+
+.estimate {
+  margin-top: var(--space-1);
+  padding: var(--space-2);
+  border: 1px dashed var(--signal);
+  font-size: var(--step--1);
+}
+
+.backup {
+  color: var(--ink-soft);
+  font-size: var(--step--1);
+}
+
+.sources {
+  font-size: var(--step--1);
+  color: var(--ink-soft);
+}
+
+.sources a {
+  overflow-wrap: anywhere;
+  text-decoration-color: var(--line-strong);
+  text-underline-offset: 3px;
+}
+
+.sources a:hover,
+.back-link:hover {
+  color: var(--signal);
+}
+
+.site-foot {
+  padding-block: var(--space-3);
+  border-top: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--ink-faint);
+}
+
+.site-foot .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: space-between;
+}
+
+@media (max-width: 560px) {
+  .own,
+  .callout {
+    margin-inline: calc(-1 * var(--space-2));
+    padding-inline: var(--space-2);
+    border-inline: 0;
+  }
+}

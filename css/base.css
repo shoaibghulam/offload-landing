@@ -200,3 +200,35 @@ svg {
     transform: none;
   }
 }
+
+/* Keep jump targets and focused controls clear of the sticky header. */
+html {
+  scroll-padding-top: 80px;
+}
+
+/* A control focused by keyboard is never left invisible by the reveal. */
+.js [data-reveal]:focus-within {
+  opacity: 1;
+  transform: none;
+}
+
+/* "Pause animation" switch in the header (WCAG 2.2.2). */
+.is-paused *,
+.is-paused *::before,
+.is-paused *::after {
+  animation-play-state: paused !important;
+}
+
+@media (hover: hover) {
+  .btn--ghost:hover {
+    border-color: var(--ink);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition-delay: 0s !important;
+  }
+}
