@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'none'">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <title>Offload — AI-ассистент руководителя</title>
+  <meta name="description" content="Снимаю рутину с руководителя: AI-агенты для почты, отчётов, CRM и контента. Прототип за 48 часов.">
+  <meta name="theme-color" content="#0f0e0c">
+  <meta property="og:title" content="Offload — рутину агентам, решения вам">
+  <meta property="og:description" content="AI-ассистенты и автоматизации для руководителей. Прототип за 48 часов.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23ff5a1f'/%3E%3Cpath d='M9 21 L16 9 L23 21' stroke='%230f0e0c' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600&family=Manrope:wght@400;600&family=Unbounded:wght@600;700&display=swap">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <script type="module" src="js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">К содержанию</a>
+
+  <header class="site-head">
+    <div class="wrap site-head__row">
+      <a class="logo" href="#top" aria-label="Offload — на главную">offload<span>/</span></a>
+      <nav class="site-nav" aria-label="Разделы">
+        <ul>
+          <li><a href="#week">Неделя</a></li>
+          <li><a href="#cases">Сценарии</a></li>
+          <li><a href="#demo">Демо</a></li>
+          <li><a href="#roi">Расчёт</a></li>
+        </ul>
+      </nav>
+      <div class="site-head__actions">
+        <button class="theme-toggle" type="button" aria-label="Сменить тему">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+        </button>
+        <a class="btn" href="#contact" data-tg>Написать</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow">AI-ассистент руководителя · vibe coding</p>
+          <h1 id="hero-title">Рутину — <span class="hl">агентам.</span><br>Решения — вам.</h1>
+          <p class="hero__lead">Собираю AI-агентов, которые разбирают почту, ведут CRM, пишут отчёты и посты. <strong>Руководитель возвращает себе 10+ часов в неделю</strong> — на то, что не автоматизируешь.</p>
+          <div class="hero__ctas">
+            <a class="btn" href="#contact" data-tg>
+              Разобрать мою рутину
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#demo">Смотреть демо</a>
+          </div>
+          <dl class="hero__facts">
+            <div><dt>48 ч</dt><dd>до первого прототипа</dd></div>
+            <div><dt>0 ₽</dt><dd>разбор процессов</dd></div>
+            <div><dt>24/7</dt><dd>агенты не устают</dd></div>
+          </dl>
+        </div>
+
+        <figure class="flow" id="flow">
+          <span class="flow__corner flow__corner--tl" aria-hidden="true">pipeline: inbox → agent → done</span>
+          <span class="flow__corner flow__corner--br" aria-hidden="true">live</span>
+          <figcaption class="sr-only">Схема: почта, Telegram, таблицы, CRM и звонки поступают к AI-агенту, а он выдаёт готовые отчёты, задачи, ответы и посты.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Инструменты, с которыми работаю">
+      <div class="ticker__track">
+        <ul>
+          <li>Claude Code</li><li>Cursor</li><li>n8n</li><li>Make</li><li>Lovable</li><li>Telegram Bot API</li><li>Google Sheets</li><li>amoCRM</li><li>Bitrix24</li><li>Notion</li>
+        </ul>
+        <ul aria-hidden="true">
+          <li>Claude Code</li><li>Cursor</li><li>n8n</li><li>Make</li><li>Lovable</li><li>Telegram Bot API</li><li>Google Sheets</li><li>amoCRM</li><li>Bitrix24</li><li>Notion</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="week" aria-labelledby="week-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="week-title" data-reveal>Неделя руководителя. До и&nbsp;после.</h2>
+          <p data-reveal>Типичная неделя: половина времени уходит на задачи, которые не требуют вашей головы. Включите агентов — и посмотрите, что останется.</p>
+        </div>
+        <div class="week">
+          <aside class="week__panel" data-reveal>
+            <button class="switch" type="button" aria-pressed="false">
+              <span class="switch__track"><span class="switch__thumb"></span></span>
+              Включить агентов
+            </button>
+            <p class="week__freed"><span data-freed aria-live="polite">0 ч</span><small>освобождается за неделю — ориентир по типовой загрузке</small></p>
+            <ul class="week__legend">
+              <li><i></i>делаете вручную</li>
+              <li><i class="is-agent"></i>делает агент, вы проверяете</li>
+              <li><i class="is-free"></i>свободное время</li>
+            </ul>
+          </aside>
+          <ul class="week__days" aria-label="Задачи по дням недели"></ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="cases" aria-labelledby="cases-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="cases-title" data-reveal>Что забираю в&nbsp;первую очередь</h2>
+          <p data-reveal>Четыре сценария, которые окупаются быстрее всего. Цифры — ориентиры по типовым процессам, точные считаем на разборе.</p>
+        </div>
+        <ol class="cases">
+          <li class="case" data-reveal>
+            <span class="case__num">01</span>
+            <div>
+              <h3>Почта и мессенджеры</h3>
+              <p>Агент читает входящие, раскладывает по важности, готовит черновики ответов и выносит наверх только то, где нужно ваше решение.</p>
+              <ul class="tags"><li>Gmail / Яндекс</li><li>Telegram</li><li>LLM</li></ul>
+            </div>
+            <dl class="case__delta">
+              <div><dt>Было</dt><dd>1,5–2 часа в день</dd></div>
+              <div class="is-after"><dt>Стало</dt><dd>15 минут на бриф</dd></div>
+            </dl>
+          </li>
+          <li class="case" data-reveal>
+            <span class="case__num">02</span>
+            <div>
+              <h3>Отчёты и сводки</h3>
+              <p>Данные из таблиц, CRM и рекламных кабинетов собираются сами, а утром в Telegram приходит короткая сводка с отклонениями.</p>
+              <ul class="tags"><li>Google Sheets</li><li>n8n</li><li>Telegram Bot</li></ul>
+            </div>
+            <dl class="case__delta">
+              <div><dt>Было</dt><dd>полдня в пятницу</dd></div>
+              <div class="is-after"><dt>Стало</dt><dd>каждое утро, автоматически</dd></div>
+            </dl>
+          </li>
+          <li class="case" data-reveal>
+            <span class="case__num">03</span>
+            <div>
+              <h3>Заявки → CRM → касание</h3>
+              <p>Заявка с сайта или из чата попадает в CRM, получает ответственного и первое сообщение клиенту — пока менеджер ещё пьёт кофе.</p>
+              <ul class="tags"><li>amoCRM / Bitrix24</li><li>Webhooks</li><li>Make</li></ul>
+            </div>
+            <dl class="case__delta">
+              <div><dt>Было</dt><dd>ответ через 2–3 часа</dd></div>
+              <div class="is-after"><dt>Стало</dt><dd>ответ за минуту</dd></div>
+            </dl>
+          </li>
+          <li class="case" data-reveal>
+            <span class="case__num">04</span>
+            <div>
+              <h3>Контент-конвейер</h3>
+              <p>Из одной голосовой заметки — пост, рассылка и сценарий для Reels в вашем тоне. Вы только утверждаете.</p>
+              <ul class="tags"><li>Whisper</li><li>Claude</li><li>Notion</li></ul>
+            </div>
+            <dl class="case__delta">
+              <div><dt>Было</dt><dd>пост раз в две недели</dd></div>
+              <div class="is-after"><dt>Стало</dt><dd>3–4 публикации в неделю</dd></div>
+            </dl>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section" id="demo" aria-labelledby="demo-title">
+      <div class="wrap demo">
+        <div class="demo__copy">
+          <p class="eyebrow">07:58, понедельник</p>
+          <h2 id="demo-title" data-reveal>Так выглядит утро, когда рутину делает агент</h2>
+          <p data-reveal>Пока вы едете в офис, агент уже разобрал почту, перенёс заявки, нашёл просроченный счёт и прислал бриф. Вам остаются три решения, а не сорок семь писем.</p>
+        </div>
+        <div class="term" id="term" data-reveal>
+          <div class="term__bar">
+            <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span>offload — morning-brief</span>
+            <button class="term__replay" type="button">↻ повторить</button>
+          </div>
+          <pre class="term__body" aria-hidden="true"></pre>
+          <p class="sr-only">Пример работы агента: разобрал 47 писем, перенёс 6 заявок в CRM, напомнил клиенту о просроченном счёте и отправил утренний бриф в Telegram.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="roi" aria-labelledby="roi-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="roi-title" data-reveal>Сколько стоит ваша рутина</h2>
+          <p data-reveal>Подвиньте ползунки. Считаем честно: агент забирает не всё, а только повторяемую часть.</p>
+        </div>
+        <div class="roi" data-reveal>
+          <div class="roi__controls">
+            <div class="field">
+              <div class="field__top"><label for="roi-hours">Рутина в неделю</label><output data-out="roi-hours" for="roi-hours">10 ч/нед</output></div>
+              <input id="roi-hours" type="range" min="1" max="40" step="1" value="10">
+              <p class="field__hint">Почта, отчёты, перенос данных, однотипные ответы</p>
+            </div>
+            <div class="field">
+              <div class="field__top"><label for="roi-rate">Стоимость вашего часа</label><output data-out="roi-rate" for="roi-rate">2 000 ₽</output></div>
+              <input id="roi-rate" type="range" min="500" max="10000" step="250" value="2000">
+            </div>
+            <div class="field">
+              <div class="field__top"><label for="roi-share">Доля, которую заберёт агент</label><output data-out="roi-share" for="roi-share">70%</output></div>
+              <input id="roi-share" type="range" min="30" max="90" step="5" value="70">
+              <p class="field__hint">70% — реалистичная оценка для типовых процессов</p>
+            </div>
+          </div>
+          <div class="roi__result">
+            <p>Возвращается в месяц</p>
+            <p class="roi__big" data-roi="money">60 620 ₽</p>
+            <dl class="roi__row">
+              <div><dt>часов в месяц</dt><dd data-roi="hours">30,3 ч</dd></div>
+              <div><dt>рабочих дней в год</dt><dd data-roi="days">45,5 дн.</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="process" aria-labelledby="process-title">
+      <div class="wrap">
+        <div class="section__head">
+          <h2 id="process-title" data-reveal>Как работаем</h2>
+          <p data-reveal>Без ТЗ на 40 страниц. Сначала работающий прототип, потом — доводка на ваших реальных данных.</p>
+        </div>
+        <ol class="steps">
+          <li class="step" data-reveal><span class="step__when">День 1 · бесплатно</span><h3>Разбор</h3><p>Созвон на 30 минут: выписываем, куда уходит ваша неделя, и выбираем 1–2 процесса с самой быстрой отдачей.</p></li>
+          <li class="step" data-reveal><span class="step__when">Дни 2–3</span><h3>Прототип</h3><p>Собираю рабочую версию на ваших инструментах. Вы трогаете её руками, а не читаете презентацию.</p></li>
+          <li class="step" data-reveal><span class="step__when">Неделя 2+</span><h3>Запуск</h3><p>Подключаю к боевым данным, добавляю проверки и инструкцию. Дальше — поддержка и следующий процесс.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cta" id="contact" aria-labelledby="cta-title">
+      <div class="wrap">
+        <h2 id="cta-title" data-reveal>Отдайте рутину <em>агентам.</em></h2>
+        <div class="cta__row" data-reveal>
+          <p>Напишите, чем вы заняты на этой неделе. Отвечу, что из этого можно забрать уже к пятнице.</p>
+          <a class="btn" href="#contact" data-tg>
+            Написать в Telegram
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="wrap">
+      <span>© 2026 Offload · Shoaib Ghulam</span>
+      <span>Собрано в Claude Code за один вечер</span>
+    </div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,81 @@
+/* Design tokens. Dark is the default look; light follows the OS or [data-theme]. */
+:root {
+  --ink: #f2ede3;
+  --ink-soft: #b9b2a5;
+  --ink-faint: #8a8377;
+  --paper: #0f0e0c;
+  --paper-raised: #181613;
+  --paper-sunken: #0a0908;
+  --line: #2c2924;
+  --line-strong: #4a463e;
+  --signal: #ff5a1f;
+  --signal-ink: #0f0e0c;
+  --signal-soft: rgb(255 90 31 / 0.14);
+  --ok: #9be37a;
+  --manual: #6b6459;
+
+  --font-display: "Unbounded", "Arial Black", system-ui, sans-serif;
+  --font-body: "Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, "Cascadia Code", monospace;
+
+  --step--1: clamp(0.84rem, 0.8rem + 0.2vw, 0.95rem);
+  --step-0: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --step-1: clamp(1.25rem, 1.1rem + 0.6vw, 1.6rem);
+  --step-2: clamp(1.6rem, 1.3rem + 1.4vw, 2.5rem);
+  --step-3: clamp(2.2rem, 1.5rem + 3.2vw, 4.6rem);
+  --step-4: clamp(2.6rem, 1.4rem + 5.6vw, 7rem);
+
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2.5rem;
+  --space-5: 4rem;
+  --space-6: 6.5rem;
+
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --max: 1280px;
+  --radius: 2px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --dur-fast: 160ms;
+  --dur-mid: 420ms;
+  --dur-slow: 900ms;
+
+  color-scheme: dark;
+}
+
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    --ink: #17140f;
+    --ink-soft: #4d473e;
+    --ink-faint: #5c554a;
+    --paper: #f3eee4;
+    --paper-raised: #fbf8f2;
+    --paper-sunken: #e8e1d4;
+    --line: #d6cdbd;
+    --line-strong: #a89e8c;
+    --signal: #b23205;
+    --signal-ink: #ffffff;
+    --signal-soft: rgb(178 50 5 / 0.1);
+    --ok: #256a0e;
+    --manual: #a39a8a;
+    color-scheme: light;
+  }
+}
+
+:root[data-theme="light"] {
+  --ink: #17140f;
+  --ink-soft: #4d473e;
+  --ink-faint: #5c554a;
+  --paper: #f3eee4;
+  --paper-raised: #fbf8f2;
+  --paper-sunken: #e8e1d4;
+  --line: #d6cdbd;
+  --line-strong: #a89e8c;
+  --signal: #b23205;
+  --signal-ink: #ffffff;
+  --signal-soft: rgb(178 50 5 / 0.1);
+  --ok: #256a0e;
+  --manual: #a39a8a;
+  color-scheme: light;
+}

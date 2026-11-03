@@ -1,0 +1,10 @@
+{
+  "name": "offload-landing",
+  "private": true,
+  "type": "module",
+  "description": "Static landing page for the hh.ru test task — no build step.",
+  "scripts": {
+    "test": "node --test tests/roi.test.mjs",
+    "coverage": "node --test --experimental-test-coverage tests/roi.test.mjs"
+  }
+}
