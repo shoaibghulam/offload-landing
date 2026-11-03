@@ -487,3 +487,12 @@
     display: none;
   }
 }
+
+/* Long words (or a browser translation) wrap instead of running under the diagram. */
+.hero h1 {
+  overflow-wrap: break-word;
+}
+
+.hero h1 .hl {
+  white-space: normal;
+}
